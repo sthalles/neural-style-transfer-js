@@ -1,0 +1,28 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Load the MobileNet model. -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/mobilenet@1.0.0"> </script>
+</head>
+
+<body>
+  <script src="scripts.js"></script>
+
+  <img id="content-image-selector" src="images/octopus.jpg" width="224" height="224" alt="Content Image">
+  <img id="style-image-selector" src="images/hockney.jpg" width="224" height="224" alt="Style Image">
+
+  <button onclick="myFunction()">Try it</button>
+
+    <canvas id="imageCanvas" width="224" height="224" style="border:1px solid #000000;">
+    </canvas>
+</body></html>
